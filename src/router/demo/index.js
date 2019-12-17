@@ -26,6 +26,15 @@ export default [
         meta: {
           title: ''
         }
+      },
+      {
+        path: '/gpMap',
+        name: 'gpMap',
+        component: () =>
+          import(/* webpackChunkName: "demo" */ '@/views/gpMap/gpMap.vue'),
+        meta: {
+          title: ''
+        }
       }
     ]
   }

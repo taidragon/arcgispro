@@ -10,8 +10,12 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-unused-expressions': 'warn',
-    'no-unused-vars': 'warn',
+    'no-unused-vars': ['warn', {
+      // 允许声明未使用变量
+      "vars": "local",
+      // 参数不检查
+      "args": "none"
+    }],
     'vue/no-parsing-error': [2, { 'x-invalid-end-tag': false }],
     'default-case': 'error', // switch必须default结尾
     'no-alert': 'error', // 不能有alert
