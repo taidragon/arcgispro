@@ -24,6 +24,7 @@ const __arcgisUrl = {
   DistanceMeasurement2D: 'esri/widgets/DistanceMeasurement2D',
   AreaMeasurement2D: 'esri/widgets/AreaMeasurement2D',
   ScaleBar: 'esri/widgets/ScaleBar',
+  Swipe: 'esri/widgets/Swipe',
   BasemapToggle: 'esri/widgets/BasemapToggle',
   Legend: 'esri/widgets/Legend',
   geometryEngine: 'esri/geometry/geometryEngine',

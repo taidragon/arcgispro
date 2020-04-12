@@ -4,7 +4,7 @@ export default [
     name: 'welcome',
     component: () =>
       import(/* webpackChunkName: "demo" */ '@/views/layout.vue'),
-    redirect: '/demo',
+    redirect: '/getCoordinate',
     meta: {
       title: ''
     },
@@ -23,6 +23,24 @@ export default [
         name: 'baseMap',
         component: () =>
           import(/* webpackChunkName: "demo" */ '@/views/baseMap/baseMap.vue'),
+        meta: {
+          title: ''
+        }
+      },
+      {
+        path: '/curtain',
+        name: 'curtain',
+        component: () =>
+          import(/* webpackChunkName: "demo" */ '@/views/curtain/curtain.vue'),
+        meta: {
+          title: ''
+        }
+      },
+      {
+        path: '/getCoordinate',
+        name: 'getCoordinate',
+        component: () =>
+          import(/* webpackChunkName: "demo" */ '@/views/getCoordinate/getCoordinate.vue'),
         meta: {
           title: ''
         }

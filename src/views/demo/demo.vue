@@ -6,6 +6,16 @@
                 baseMap
               </router-link>
             </li>
+            <li>
+              <router-link :to="{ name:'gpMap'}">
+                gpMap
+              </router-link>
+            </li>
+            <li>
+              <router-link :to="{ name:'curtain'}">
+                curtain
+              </router-link>
+            </li>
         </ul>
     </div>
 </template>
